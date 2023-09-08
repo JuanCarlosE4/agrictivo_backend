@@ -1,0 +1,10 @@
+# 18.16.0
+deployment:
+  exclude:
+    - ".git"
+    - ".env"
+    - ".env.example"
+  tasks:
+    - command: "nvm use 18.16.0"
+    - command: "npm ci"
+    - command: "npm start"
